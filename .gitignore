@@ -1,0 +1,46 @@
+node_modules
+# Dossiers et fichiers de logs
+logs/
+*.log
+
+# Répertoires de dépendances
+node_modules/
+vendor/
+
+# Répertoires temporaires et de cache
+tmp/
+temp/
+.cache/
+*.tmp
+*.temp
+*.swp
+
+# Fichiers de build
+dist/
+build/
+out/
+
+# Environnements de déploiement
+.env
+.env.local
+.env.*.local
+
+# Fichiers de configuration locaux
+*.local
+*.envrc
+.DS_Store
+
+# Clés SSH ou GPG
+*.pem
+*.key
+
+# Bases de données locales
+*.sqlite
+*.db
+*.sqlite3
+*.db3
+
+# Fichiers générés par le système
+Thumbs.db
+ehthumbs.db
+Desktop.ini
