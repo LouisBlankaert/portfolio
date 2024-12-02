@@ -32,7 +32,7 @@ const Services = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className='grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto mb-16 max-w-4xl md:auto-rows-[16rem]'
+        className='grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto mb-16 max-w-4xl md:auto-rows-[16rem]'
       >
         <ServiceItem 
           icon={
@@ -77,19 +77,25 @@ const Services = () => {
           description="I am an 'expert' in JavaScript library, and I can create whatever you want with this."
         />
         <ServiceItem 
-          imgSrc="https://img.icons8.com/?size=100&id=54087&format=png&color=000000"
-          title="Node JS"
-          description="I am an 'expert' in Node JS library, and I can create whatever you want with this."
+          imgSrc="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-official~v2.svg"
+          title="Flask"
+          description="I am an 'expert' in Flask library, and I can create whatever you want with this."
         />
         <ServiceItem 
-          imgSrc="https://raw.githubusercontent.com/detain/svg-logos/master/svg/m/mongodb-icon-2.svg"
-          title="Mongo DB"
-          description="I am an 'expert' in Mongo DB library, and I can create whatever you want with this."
+          imgSrc="https://www.vectorlogo.zone/logos/python/python-icon.svg"
+          title="Python"
+          description="I am an 'expert' in Python library, and I can create whatever you want with this."
         />
         <ServiceItem 
-          imgSrc="https://s3.amazonaws.com/cmscritic.mediasite.org/assets/products/nextjs/logo-291886093470.jpeg?v=1684765419030"
+          imgSrc="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg"
           title="Next JS"
           description="I am an 'expert' in Next JS library, and I can create whatever you want with this."
+        />
+
+        <ServiceItem 
+          imgSrc="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg"
+          title="PostgreSQL"
+          description="I am an 'expert' in PostgreSQL library, and I can create whatever you want with this."
         />
       </motion.div>
     </section>

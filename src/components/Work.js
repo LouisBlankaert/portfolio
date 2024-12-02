@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 //img
 import Img1 from '../assets/myMoviz2.png'
-import Img2 from '../assets/weatherApp.png'
-import Img3 from '../assets/landingPageMountain.png'
+import Img2 from '../assets/anais.png'
+import Img3 from '../assets/felibrosse.png'
 
 const Work = () => {
   return (
@@ -49,14 +49,14 @@ const Work = () => {
           </a>
 
           {/* image 2 */}
-          <a href="https://weather-app-vite-psi.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <a href="https://anais-commerce.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
             <img 
               src={Img2} 
               alt='Project 2' 
-              className='w-full h-auto group-hover:scale-125 transition-all duration-500' 
+              className='w-full h-full group-hover:scale-125 transition-all duration-500' 
             />
             {/* pretitle */}
             <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
@@ -64,12 +64,12 @@ const Work = () => {
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-2xl text-white'>Weather App</span>
+              <span className='text-2xl text-white'>Anais Commerce</span>
             </div>
           </a>
 
           {/* image 3 */}
-          <a href="https://landing-page-mountain-one.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <a href="https://felibrosse.com/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
@@ -80,11 +80,11 @@ const Work = () => {
             />
             {/* pretitle */}
             <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>Web Development</span>
+              <span className='text-gradient'>E-commerce</span>
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-2xl text-white'>Landing Page</span>
+              <span className='text-2xl text-white'>Felibrosse</span>
             </div>
           </a>
         </div>
