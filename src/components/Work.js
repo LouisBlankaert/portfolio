@@ -7,6 +7,9 @@ import { fadeIn } from '../variants';
 import Img1 from '../assets/myMoviz2.png'
 import Img2 from '../assets/anais.png'
 import Img3 from '../assets/felibrosse.png'
+import Img4 from '../assets/yoga.png'
+import Img5 from '../assets/snake.png'
+import Img6 from '../assets/pokemon.png'
 
 const Work = () => {
   return (
@@ -28,26 +31,45 @@ const Work = () => {
 
         {/* images section */}
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
-          {/* image 1 */}
-          <a href="https://mymoviz-frontend-ten-iota.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <a href="https://yoga-three-cyan.vercel.app//" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+              {/* overlay */}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
+              <img 
+                src={Img4} 
+                alt='Project 1' 
+                className='w-full h-full group-hover:scale-125 transition-all duration-500' 
+              />
+              {/* pretitle */}
+              <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-gradient'>Web Development</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                <span className='text-2xl text-white'>Mon yoga</span>
+              </div>
+          </a>
+
+          {/* image 3 */}
+          <a href="https://felibrosse.com/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
             <img 
-              src={Img1} 
-              alt='Project 1' 
+              src={Img3} 
+              alt='Project 3' 
               className='w-full h-full group-hover:scale-125 transition-all duration-500' 
             />
             {/* pretitle */}
             <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>Web Development</span>
+              <span className='text-gradient'>E-commerce</span>
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-2xl text-white'>My moviz</span>
+              <span className='text-2xl text-white'>Felibrosse</span>
             </div>
           </a>
-
+          
           {/* image 2 */}
           <a href="https://anais-commerce.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
@@ -68,23 +90,61 @@ const Work = () => {
             </div>
           </a>
 
-          {/* image 3 */}
-          <a href="https://felibrosse.com/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          {/* image 2 */}
+          <a href="https://mymoviz-frontend-ten-iota.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
             <img 
-              src={Img3} 
-              alt='Project 3' 
+              src={Img1} 
+              alt='Project 1' 
               className='w-full h-full group-hover:scale-125 transition-all duration-500' 
             />
             {/* pretitle */}
             <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-              <span className='text-gradient'>E-commerce</span>
+              <span className='text-gradient'>Web Development</span>
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-2xl text-white'>Felibrosse</span>
+              <span className='text-2xl text-white'>My moviz</span>
+            </div>
+          </a>
+          
+          <a href="https://snake-game-self-phi.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            {/* overlay */}
+            <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+            {/* img */}
+            <img 
+              src={Img5} 
+              alt='Project 1' 
+              className='w-full h-full group-hover:scale-125 transition-all duration-500' 
+            />
+            {/* pretitle */}
+            <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <span className='text-gradient'>Game</span>
+            </div>
+            {/* title */}
+            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+              <span className='text-2xl text-white'>Snake Game</span>
+            </div>
+          </a>
+          
+          <a href="https://pokemon-frontend-pi.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            {/* overlay */}
+            <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+            {/* img */}
+            <img 
+              src={Img6} 
+              alt='Project 1' 
+              className='w-full h-full group-hover:scale-125 transition-all duration-500' 
+            />
+            {/* pretitle */}
+            <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <span className='text-gradient'>Web Development</span>
+            </div>
+            {/* title */}
+            <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+              <span className='text-2xl text-white'>Pokemon api</span>
             </div>
           </a>
         </div>

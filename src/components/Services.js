@@ -7,15 +7,15 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 const ServiceItem = ({ icon, title, description, imgSrc }) => (
-  <div className='row-span-1 rounded-xl p-4 pb-12 border flex flex-col space-y-4'>
-    <div className='flex justify-center'>
+  <div className='row-span-1 rounded-xl p-4 pb-12 border flex flex-col items-center space-y-4'>
+    <div className='flex justify-center w-full'>
       {icon ? (
         <div className='w-24 h-24'>{icon}</div>
       ) : (
-        <img src={imgSrc} alt={title} className='w-1/3 h-auto' />
+        <img src={imgSrc} alt={title} className='w-24 h-24 object-contain' />
       )}
     </div>
-    <div className='flex flex-col gap-2'>
+    <div className='flex flex-col items-center text-center gap-2 w-full'>
       <p className='text-lg font-semibold'>{title}</p>
       <p className='text-sm text-muted-foreground'>
         <span className='text-sm'>{description}</span>
