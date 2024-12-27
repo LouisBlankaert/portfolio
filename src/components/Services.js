@@ -97,6 +97,12 @@ const Services = () => {
           title="PostgreSQL"
           description="I am an 'expert' in PostgreSQL library, and I can create whatever you want with this."
         />
+
+        <ServiceItem 
+          imgSrc="https://cdn.worldvectorlogo.com/logos/prisma-2.svg"
+          title="Prisma"
+          description="I am an 'expert' in Prisma library, and I can create whatever you want with this."
+        />
       </motion.div>
     </section>
   );

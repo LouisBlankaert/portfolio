@@ -9,7 +9,7 @@ import Img2 from '../assets/anais.png'
 import Img3 from '../assets/felibrosse.png'
 import Img4 from '../assets/yoga.png'
 import Img5 from '../assets/snake.png'
-import Img6 from '../assets/pokemon.png'
+import Img6 from '../assets/moviz2.0.png'
 
 const Work = () => {
   return (
@@ -129,7 +129,7 @@ const Work = () => {
             </div>
           </a>
           
-          <a href="https://pokemon-frontend-pi.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <a href="https://movie-tau-mocha.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
             {/* img */}
@@ -144,7 +144,7 @@ const Work = () => {
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-              <span className='text-2xl text-white'>Pokemon api</span>
+              <span className='text-2xl text-white'>my moviz 2.0</span>
             </div>
           </a>
         </div>
