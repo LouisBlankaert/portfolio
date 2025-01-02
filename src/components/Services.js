@@ -26,14 +26,8 @@ const ServiceItem = ({ icon, title, description, imgSrc }) => (
 
 const Services = () => {
   return (
-    <section className='section' id='services'>
-      <motion.div 
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className='grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto mb-16 max-w-4xl md:auto-rows-[16rem]'
-      >
+    <section className='section mb-24' id='services'>
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto mb-16 max-w-4xl md:auto-rows-[16rem]'>
         <ServiceItem 
           icon={
             <svg
@@ -103,7 +97,7 @@ const Services = () => {
           title="Prisma"
           description="I am an 'expert' in Prisma library, and I can create whatever you want with this."
         />
-      </motion.div>
+      </div>
     </section>
   );
 };

@@ -26,23 +26,23 @@ const Banner = () => {
           {/* text */}
           <div className='flex-1 text-center font-secondary lg:text-left'>
             <motion.h1 
-              variants={fadeIn('up', 0.3)} 
+              variants={fadeIn('up', 0.2)} 
               initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.7 }} 
+              viewport={{ once: false, amount: 0.3 }} 
               className='text-[40px] font-bold leading-[0.8] lg:text-[80px]'>
               LOUIS <span>BLANKAERT</span>
             </motion.h1>
             <motion.div 
-              variants={fadeIn('up', 0.4)} 
+              variants={fadeIn('up', 0.3)} 
               initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.7 }} 
+              viewport={{ once: false, amount: 0.3 }} 
               className='mb-4 text-[28px] lg:text-[48px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='text-white mr-2'>I am a</span>
               <TypeAnimation sequence={[
                 "Developer",
-                2000,
+                1500,
                 "Gamer",
-                2000,
+                1500,
               ]} 
               speed={50}
               className='text-accent'
@@ -51,24 +51,24 @@ const Banner = () => {
               />
             </motion.div>
             <motion.p 
-              variants={fadeIn('up', 0.5)} 
+              variants={fadeIn('up', 0.4)} 
               initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.7 }} 
+              viewport={{ once: false, amount: 0.3 }} 
               className='mb-6 max-w-md mx-auto lg:mx-0 text-[14px] lg:text-[16px]'>
               Hello! I'm a 27-year-old developer based in Belgium, I'm available to work with clients from anywhere at any time. With a passion for technology and a deep love for coding, I bring creativity and dedication to every project I take on.
             </motion.p>
             <motion.div 
-              variants={fadeIn('up', 0.6)} 
+              variants={fadeIn('up', 0.5)} 
               initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.7 }} 
+              viewport={{ once: false, amount: 0.3 }} 
               className='flex max-w-max gap-x-4 items-center mb-8 mx-auto lg:mx-0'>
                 <button onClick={scrollToContact} className='btn btn-sm lg:btn-md'>Contact me</button>
             </motion.div>
             {/* socials */}
             <motion.div 
-              variants={fadeIn('up', 0.7)} 
+              variants={fadeIn('up', 0.6)} 
               initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.7 }} 
+              viewport={{ once: false, amount: 0.3 }} 
               className='flex text-[16px] gap-x-4 max-w-max mx-auto lg:mx-0'>
               <a href='https://github.com/LouisBlankaert' target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-2xl lg:text-2xl" />

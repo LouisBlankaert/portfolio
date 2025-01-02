@@ -40,10 +40,10 @@ const Contact = () => {
         <div className='flex flex-col lg:flex-row'>
           {/* text */}
           <motion.div 
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount: 0.3}}
+            viewport={{once:false, amount: 0.2}}
             className='flex-1 flex justify-start items-center'>
             <div>
               <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
@@ -53,11 +53,11 @@ const Contact = () => {
           {/* form */}
           <motion.form 
             onSubmit={handleSubmit} 
-            variants={fadeIn("left", 0.3)}
+            variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount: 0.3}}
-            className='flex-1 border rounded-2xl flex flex-col pb-12 p-6 items-start'>
+            viewport={{once:false, amount: 0.2}}
+            className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
             <input 
               className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
               type='email' 
