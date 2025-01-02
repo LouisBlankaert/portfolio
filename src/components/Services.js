@@ -7,18 +7,18 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 
 const ServiceItem = ({ icon, title, description, imgSrc }) => (
-  <div className='row-span-1 rounded-xl p-4 pb-12 border flex flex-col items-center space-y-4'>
+  <div className='row-span-1 rounded-xl p-6 pb-14 border flex flex-col items-center space-y-6 w-full max-w-[350px]'>
     <div className='flex justify-center w-full'>
       {icon ? (
-        <div className='w-24 h-24'>{icon}</div>
+        <div className='w-28 h-28'>{icon}</div>
       ) : (
-        <img src={imgSrc} alt={title} className='w-24 h-24 object-contain' />
+        <img src={imgSrc} alt={title} className='w-28 h-28 object-contain' />
       )}
     </div>
-    <div className='flex flex-col items-center text-center gap-2 w-full'>
-      <p className='text-lg font-semibold'>{title}</p>
-      <p className='text-sm text-muted-foreground'>
-        <span className='text-sm'>{description}</span>
+    <div className='flex flex-col items-center text-center gap-3 w-full'>
+      <p className='text-xl font-semibold'>{title}</p>
+      <p className='text-base text-muted-foreground'>
+        <span className='text-base'>{description}</span>
       </p>
     </div>
   </div>
@@ -27,7 +27,7 @@ const ServiceItem = ({ icon, title, description, imgSrc }) => (
 const Services = () => {
   return (
     <section className='section mb-24' id='services'>
-      <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto mb-16 max-w-4xl md:auto-rows-[16rem]'>
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto mb-16 max-w-4xl md:auto-rows-[16rem] place-items-center'>
         <ServiceItem 
           icon={
             <svg
