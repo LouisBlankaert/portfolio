@@ -27,7 +27,7 @@ const ServiceItem = ({ icon, title, description, imgSrc }) => (
 const Services = () => {
   return (
     <section className='section mb-24' id='services'>
-      <div className='grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto mb-16 max-w-4xl md:auto-rows-[16rem] place-items-center'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto mb-16 max-w-7xl'>
         <ServiceItem 
           icon={
             <svg

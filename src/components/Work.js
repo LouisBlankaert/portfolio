@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 //img
 import Img1 from '../assets/myMoviz2.png'
-import Img2 from '../assets/anais.png'
+import Img2 from '../assets/siteOngles.png'
 import Img3 from '../assets/felibrosse.png'
 import Img4 from '../assets/yoga.png'
 import Img5 from '../assets/snake.png'
