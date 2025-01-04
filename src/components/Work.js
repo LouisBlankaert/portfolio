@@ -6,7 +6,7 @@ import { fadeIn } from '../variants';
 //img
 import Img1 from '../assets/myMoviz2.png'
 import Img2 from '../assets/siteOngles.png'
-import Img3 from '../assets/felibrosse.png'
+import Img3 from '../assets/devexpress.png'
 import Img4 from '../assets/yoga.png'
 import Img5 from '../assets/snake.png'
 import Img6 from '../assets/moviz2.0.png'
@@ -45,7 +45,7 @@ const Work = () => {
           </a>
 
           {/* image 3 */}
-          <a href="https://felibrosse.com/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <a href="https://dev-express.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-150'></div>
             {/* img */}
@@ -56,11 +56,11 @@ const Work = () => {
             />
             {/* pretitle */}
             <div className='absolute bottom-full left-12 group-hover:bottom-24 transition-all duration-200 z-50'>
-              <span className='text-gradient'>E-commerce</span>
+              <span className='text-gradient'>Web Development</span>
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-200 z-50'>
-              <span className='text-2xl text-white'>Felibrosse</span>
+              <span className='text-2xl text-white'>Dev_express</span>
             </div>
           </a>
           
