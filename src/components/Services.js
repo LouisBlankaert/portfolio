@@ -1,10 +1,4 @@
 import React from 'react';
-//icon
-import { BsArrowUpRight } from 'react-icons/bs';
-//motion
-import { motion } from 'framer-motion';
-//variants
-import { fadeIn } from '../variants';
 
 const ServiceItem = ({ icon, title, description, imgSrc }) => (
   <div className='row-span-1 rounded-xl p-6 pb-14 border flex flex-col items-center space-y-6 w-full max-w-[350px]'>

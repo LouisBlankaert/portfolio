@@ -1,10 +1,6 @@
 import React from 'react';
-//motion
-import { motion } from 'framer-motion';
-//variants
-import { fadeIn } from '../variants';
 //img
-import Img1 from '../assets/myMoviz2.png'
+import Img1 from '../assets/autogate.png'
 import Img2 from '../assets/siteOngles.png'
 import Img3 from '../assets/devexpress.png'
 import Img4 from '../assets/yoga.png'
@@ -85,7 +81,7 @@ const Work = () => {
           </a>
 
           {/* image 2 */}
-          <a href="https://mymoviz-frontend-ten-iota.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <a href="https://site-voiture-drab.vercel.app/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-150'></div>
             {/* img */}
@@ -100,7 +96,7 @@ const Work = () => {
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-200 z-50'>
-              <span className='text-2xl text-white'>My moviz</span>
+              <span className='text-2xl text-white'>Autogate</span>
             </div>
           </a>
           
