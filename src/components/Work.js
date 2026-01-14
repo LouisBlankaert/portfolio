@@ -4,7 +4,7 @@ import Img1 from '../assets/autogate.png'
 import Img2 from '../assets/siteOngles.png'
 import Img3 from '../assets/devexpress.png'
 import Img4 from '../assets/yoga.png'
-import Img5 from '../assets/dulce_laces.png'
+import Img5 from '../assets/phonix.png'
 import Img6 from '../assets/moviz2.0.png'
 
 const Work = () => {
@@ -100,7 +100,7 @@ const Work = () => {
             </div>
           </a>
           
-          <a href="https://dulce-laces.com/" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+          <a href="https://phonix-repair.be" target="_blank" rel="noopener noreferrer" className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
             <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-150'></div>
             {/* img */}
@@ -115,7 +115,7 @@ const Work = () => {
             </div>
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-200 z-50'>
-              <span className='text-2xl text-white'>dulces-laces</span>
+              <span className='text-2xl text-white'>Phonix-repair</span>
             </div>
           </a>
           
