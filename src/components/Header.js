@@ -16,7 +16,7 @@ const Header = () => {
         <div className='flex justify-between items-center'>
           {/* logo */}
           <a href='#home'>
-            <img src={Logo} alt="Logo" />
+            <img src={Logo} alt="Logo" className='hover:opacity-80 transition-opacity' />
           </a>
           {/* button */}
             <button onClick={scrollToContact} className='btn btn-sm'>Work with me</button>

@@ -2,9 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: 'Inter',
+      secondary: 'Inter',
+      tertiary: 'Poppins',
     },
     container: {
       padding: {
@@ -19,13 +19,23 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
-        accent: '#B809C3',
+        primary: '#0a0e27',
+        accent: '#00ff88',
+        neon: {
+          cyan: '#00f5ff',
+          lime: '#00ff88',
+          green: '#00dd9d',
+        },
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
+      },
+      boxShadow: {
+        neon: '0 0 10px rgba(0, 255, 136, 0.75), 0 0 20px rgba(0, 255, 136, 0.5)',
+        neonCyan: '0 0 10px rgba(0, 245, 255, 0.75), 0 0 20px rgba(0, 245, 255, 0.5)',
+        neonGreen: '0 0 10px rgba(0, 221, 157, 0.75), 0 0 20px rgba(0, 221, 157, 0.5)',
       },
     },
   },

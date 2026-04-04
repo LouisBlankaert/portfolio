@@ -18,6 +18,9 @@ temp/
 # Fichiers de build
 dist/
 build/
+
+# Fichiers système macOS
+.DS_Store
 out/
 
 # Environnements de déploiement

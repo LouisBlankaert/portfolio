@@ -27,23 +27,23 @@ const Banner = () => {
               variants={fadeIn('up', 0.2)} 
               initial="hidden" whileInView={"show"} 
               viewport={{ once: false, amount: 0.3 }} 
-              className='text-[40px] font-bold leading-[0.8] lg:text-[80px]'>
-              LOUIS <span>BLANKAERT</span>
+              className='text-[48px] font-bold font-tertiary leading-[1.1] lg:text-[64px] text-white'>
+              Louis <span className='neon-text'>Blankaert</span>
             </motion.h1>
             <motion.div 
               variants={fadeIn('up', 0.3)} 
               initial="hidden" whileInView={"show"} 
               viewport={{ once: false, amount: 0.3 }} 
-              className='mb-4 text-[28px] lg:text-[48px] font-secondary font-semibold uppercase leading-[1]'>
-              <span className='text-white mr-2'>I am a</span>
+              className='mb-6 text-[24px] lg:text-[36px] font-primary font-semibold leading-[1.3]'>
+              <span className='text-gray-300 mr-2'>Full Stack Developer</span>
               <TypeAnimation sequence={[
-                "Developer",
-                1500,
-                "Gamer",
-                1500,
+                "& Problem Solver",
+                2000,
+                "& Creative Thinker",
+                2000,
               ]} 
               speed={50}
-              className='text-accent'
+              className='neon-text-cyan'
               wrapper="span"
               repeat={Infinity}
               />
@@ -52,8 +52,8 @@ const Banner = () => {
               variants={fadeIn('up', 0.4)} 
               initial="hidden" whileInView={"show"} 
               viewport={{ once: false, amount: 0.3 }} 
-              className='mb-6 max-w-md mx-auto lg:mx-0 text-[14px] lg:text-[16px]'>
-              Hello! I'm a 27-year-old developer based in Belgium, I'm available to work with clients from anywhere at any time. With a passion for technology and a deep love for coding, I bring creativity and dedication to every project I take on.
+              className='mb-8 max-w-lg mx-auto lg:mx-0 text-[16px] lg:text-[18px] text-gray-300 leading-relaxed'>
+              Passionate full-stack developer from Belgium with 2+ years of experience. I build fast, responsive, and user-friendly web applications. Available for freelance projects worldwide.
             </motion.p>
             <motion.div 
               variants={fadeIn('up', 0.5)} 

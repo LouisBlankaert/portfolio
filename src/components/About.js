@@ -33,27 +33,27 @@ const About = () => {
           whileInView={"show"}
           viewport={{once:false, amount: 0.2}}
           className='flex-1 flex items-center flex-col'>
-            <h2 className='h2 text-accent'>About me : </h2>
-            <h3 className='h3 mb-2 lg:mb-8'>I'm a freelance developer</h3>
-            <p className='mb-2 lg:mb-8'>
-              With over 2 years of experience in the world of development, I am passionate about technology and coding. My enthusiasm for IT often feels like an obsession, driving me to constantly learn and grow in this ever-evolving field. I thrive on tackling new challenges and am always eager to explore innovative solutions. If you're looking for a dedicated and driven developer ready to contribute and assist, I'm here to help bring your ideas to life.
+            <h2 className='h2 text-accent mb-2'>About me</h2>
+            <h3 className='h3 mb-6 lg:mb-8 neon-text-cyan'>Full Stack Developer & Problem Solver</h3>
+            <p className='mb-6 lg:mb-8 text-gray-300 text-center lg:text-left'>
+              With over 2 years of professional experience, I'm passionate about creating elegant solutions to complex problems. I specialize in building high-performance web applications using modern technologies like React, Next.js, and Node.js. When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects.
             </p>
             {/* stats */}
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
-              <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  { inView ? <CountUp start={0} end={2} duration={1.5} /> : null }
+            <div className='flex gap-x-8 lg:gap-x-12 mb-12'>
+              <div className='flex flex-col items-center'>
+                <div className='text-[48px] font-tertiary font-bold neon-text mb-2'>
+                  { inView ? <CountUp start={0} end={2} duration={1.5} suffix='+' /> : null }
                 </div>
-                <div className='font-primary text-sm tracking-[2px]'>
+                <div className='font-primary text-sm text-gray-400 text-center'>
                   Years of <br />
                   Experience
                 </div>
               </div>
-              <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  { inView ? <CountUp start={0} end={100} duration={1.5} suffix='+' /> : null }
+              <div className='flex flex-col items-center'>
+                <div className='text-[48px] font-tertiary font-bold neon-text mb-2'>
+                  { inView ? <CountUp start={0} end={20} duration={1.5} suffix='+' /> : null }
                 </div>
-                <div className='font-primary text-sm tracking-[2px]'>
+                <div className='font-primary text-sm text-gray-400 text-center'>
                   Projects <br />
                   Completed
                 </div>

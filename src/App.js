@@ -10,17 +10,16 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+    <div className='bg-primary min-h-screen overflow-hidden'>
       <Header />
       <div className='pl-3'> 
-      <Banner />
-      <Nav />
-      <About />
-      <Services />
-      <Work />
-      <Contact />
+        <Banner />
+        <Nav />
+        <About />
+        <Services />
+        <Work />
+        <Contact />
       </div>
-      {/* <div className='h-screen'></div> */}
     </div>
   );
 };

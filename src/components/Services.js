@@ -1,17 +1,17 @@
 import React from 'react';
 
 const ServiceItem = ({ icon, title, description, imgSrc }) => (
-  <div className='row-span-1 rounded-xl p-6 pb-14 border flex flex-col items-center space-y-6 w-full max-w-[350px]'>
-    <div className='flex justify-center w-full'>
+  <div className='rounded-xl p-8 border border-neon-lime/50 hover:border-neon-cyan/80 bg-black/30 hover:bg-black/50 flex flex-col items-center space-y-6 w-full max-w-[350px] transition-all duration-300 group' style={{boxShadow: '0 0 8px rgba(0, 255, 136, 0.1)'}}>
+    <div className='flex justify-center w-full group-hover:scale-110 transition-transform duration-300'>
       {icon ? (
-        <div className='w-28 h-28'>{icon}</div>
+        <div className='w-24 h-24'>{icon}</div>
       ) : (
-        <img src={imgSrc} alt={title} className='w-28 h-28 object-contain' />
+        <img src={imgSrc} alt={title} className='w-24 h-24 object-contain' />
       )}
     </div>
     <div className='flex flex-col items-center text-center gap-3 w-full'>
-      <p className='text-xl font-semibold'>{title}</p>
-      <p className='text-base text-muted-foreground'>
+      <p className='text-lg font-semibold text-white font-primary'>{title}</p>
+      <p className='text-base text-gray-400 font-primary'>
         <span className='text-base'>{description}</span>
       </p>
     </div>

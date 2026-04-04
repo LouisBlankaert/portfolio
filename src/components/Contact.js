@@ -37,7 +37,7 @@ const Contact = () => {
   return (
     <section className='section py-16 mb-12 lg:section' id='contact'>
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row'>
+        <div className='flex flex-col lg:flex-row gap-12 items-stretch'>
           {/* text */}
           <motion.div 
             variants={fadeIn("right", 0.2)}
@@ -46,8 +46,9 @@ const Contact = () => {
             viewport={{once:false, amount: 0.2}}
             className='flex-1 flex justify-start items-center'>
             <div>
-              <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
-              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>Let's work <br/>Together</h2>
+              <h4 className='text-sm uppercase neon-text-cyan font-semibold mb-4 tracking-wider'>Get in touch</h4>
+              <h2 className='h2 text-white mb-6'>Let's work<br/>together</h2>
+              <p className='text-gray-400 text-lg mb-8 max-w-md'>Have a project in mind? I'd love to discuss how we can work together. Send me a message and I'll get back to you as soon as possible.</p>
             </div>
           </motion.div>
           {/* form */}
@@ -57,21 +58,22 @@ const Contact = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{once:false, amount: 0.2}}
-            className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
+            className='flex-1 border border-neon-lime/40 rounded-xl flex flex-col gap-y-6 p-8 items-start bg-black/40' style={{boxShadow: '0 0 10px rgba(0, 255, 136, 0.08)'}}>
             <input 
-              className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
+              className='bg-transparent border-b border-neon-lime/50 py-3 outline-none w-full placeholder:text-gray-600 text-white focus:border-neon-cyan transition-all' 
               type='email' 
               name='email' 
-              placeholder='Your email' 
+              placeholder='your.email@example.com' 
               required 
             />
             <textarea 
-              className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12'
+              className='bg-transparent border-b border-neon-lime/50 py-4 outline-none w-full placeholder:text-gray-600 text-white focus:border-neon-cyan transition-all resize-none'
               name='message'
-              placeholder='Your message'
+              placeholder='Tell me about your project...'
+              rows='6'
               required
             ></textarea>
-            <button className='btn btn-lg'>Send message</button>
+            <button className='btn btn-lg mt-6'>Send message</button>
           </motion.form>
         </div>
 
