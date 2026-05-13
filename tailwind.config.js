@@ -29,8 +29,6 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/about.png')",
-        services: "url('./assets/services.png')",
       },
       boxShadow: {
         neon: '0 0 10px rgba(0, 255, 136, 0.75), 0 0 20px rgba(0, 255, 136, 0.5)',

@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 //motion
 import { motion } from 'framer-motion';
 //variant
-import { fadeIn } from '../variants';
+import { fadeIn } from '../utils/variants';
 
 
 const About = () => {

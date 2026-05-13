@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { fadeIn } from '../variants';
+import { fadeIn } from '../utils/variants';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

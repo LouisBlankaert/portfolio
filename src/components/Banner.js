@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 //motion
 import { motion } from 'framer-motion';
 //variants
-import { fadeIn } from "../variants"
+import { fadeIn } from "../utils/variants"
 
 const Banner = () => {
 
