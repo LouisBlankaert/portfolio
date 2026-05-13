@@ -28,22 +28,5 @@ export const projects = [
     category: 'Web Development',
     url: 'https://movie-tau-mocha.vercel.app/',
   },
-  {
-    img: null,
-    title: 'GFinance',
-    category: 'Web Development',
-    url: '#',
-  },
-  {
-    img: null,
-    title: 'Dashboard Trading',
-    category: 'Web Development',
-    url: '#',
-  },
-  {
-    img: null,
-    title: 'Agenda Louis',
-    category: 'Web Development',
-    url: '#',
-  },
+
 ];

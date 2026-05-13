@@ -10,20 +10,11 @@ const ProjectCard = ({ img, title, category, url }) => (
     style={{boxShadow: '0 0 6px rgba(0, 245, 255, 0.08)'}}
   >
     <div className='group-hover:bg-black/30 w-full h-full absolute z-40 transition-all duration-200 bg-black/10'></div>
-    {img ? (
-      <img
-        src={img}
-        alt={title}
-        className='w-full h-56 object-cover group-hover:scale-110 transition-all duration-300'
-      />
-    ) : (
-      <div
-        className='w-full h-56 flex items-center justify-center'
-        style={{background: 'linear-gradient(135deg, #0a0a0a 0%, #111827 50%, #0a0a0a 100%)'}}
-      >
-        <span className='text-neon-cyan/30 text-sm tracking-widest uppercase'>Coming Soon</span>
-      </div>
-    )}
+    <img
+      src={img}
+      alt={title}
+      className='w-full h-56 object-cover group-hover:scale-110 transition-all duration-300'
+    />
     <div className='absolute bottom-full left-8 group-hover:bottom-32 transition-all duration-200 z-50'>
       <span className='neon-text-cyan text-sm font-semibold'>{category}</span>
     </div>
