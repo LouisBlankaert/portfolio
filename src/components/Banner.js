@@ -17,73 +17,95 @@ const Banner = () => {
     }
   };
 
+  const scrollToWork = () => {
+    const workSection = document.getElementById('work');
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className='min-h-[75vh] lg:min-h-[70vh] flex items-center' id='home'>
+    <section className='relative min-h-[85vh] flex items-center' id='home'>
+      {/* fixed social rail */}
+      <div className='hidden lg:flex flex-col gap-4 fixed right-6 top-1/2 -translate-y-1/2 z-40'>
+        <a
+          href='https://github.com/LouisBlankaert'
+          target="_blank" rel="noopener noreferrer"
+          className='w-11 h-11 rounded-full border border-white/10 bg-card flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent/50 transition-colors'
+        >
+          <FaGithub className='text-lg' />
+        </a>
+        <a
+          href='https://linkedin.com/in/louis-blankaert-969595177'
+          target="_blank" rel="noopener noreferrer"
+          className='w-11 h-11 rounded-full border border-white/10 bg-card flex items-center justify-center text-gray-400 hover:text-accent hover:border-accent/50 transition-colors'
+        >
+          <FaLinkedin className='text-lg' />
+        </a>
+      </div>
+
       <div className='container mx-auto'>
-        <div className='flex flex-col gap-y-6 lg:flex-row lg:items-center lg:gap-x-10'>
-          {/* text */}
-          <div className='flex-1 text-center font-secondary lg:text-left'>
-            <motion.h1 
-              variants={fadeIn('up', 0.2)} 
-              initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.3 }} 
-              className='text-[48px] font-bold font-tertiary leading-[1.1] lg:text-[64px] text-white'>
-              Louis <span className='neon-text'>Blankaert</span>
-            </motion.h1>
-            <motion.div 
-              variants={fadeIn('up', 0.3)} 
-              initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.3 }} 
-              className='mb-6 text-[24px] lg:text-[36px] font-primary font-semibold leading-[1.3]'>
-              <span className='text-gray-300 mr-2'>Full Stack Developer</span>
-              <TypeAnimation sequence={[
-                "& Problem Solver",
-                2000,
-                "& Creative Thinker",
-                2000,
-              ]} 
+        <div className='max-w-3xl mx-auto text-center font-secondary'>
+          <motion.p
+            variants={fadeIn('up', 0.1)}
+            initial="hidden" whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className='text-gray-400 text-lg mb-3'>
+            Hello 👋, I'm
+          </motion.p>
+          <motion.h1
+            variants={fadeIn('up', 0.2)}
+            initial="hidden" whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className='font-display text-[44px] sm:text-[56px] lg:text-[72px] leading-[1.1] font-semibold mb-6'>
+            <span className='text-white'>Louis</span> <span className='text-accent'>Blankaert</span>
+          </motion.h1>
+          <motion.div
+            variants={fadeIn('up', 0.3)}
+            initial="hidden" whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className='mb-6 text-[22px] lg:text-[28px] font-primary font-semibold leading-[1.3]'>
+            <span className='text-gray-300 mr-2'>Software Engineering Student</span>
+            <TypeAnimation sequence={[
+              "@ 42 Belgium",
+              2000,
+              "& Freelance Web Developer",
+              2000,
+            ]}
               speed={50}
-              className='neon-text-cyan'
+              className='text-accent'
               wrapper="span"
               repeat={Infinity}
-              />
-            </motion.div>
-            <motion.p 
-              variants={fadeIn('up', 0.4)} 
-              initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.3 }} 
-              className='mb-8 max-w-lg mx-auto lg:mx-0 text-[16px] lg:text-[18px] text-gray-300 leading-relaxed'>
-              Passionate full-stack developer from Belgium with 2+ years of experience. I build fast, responsive, and user-friendly web applications. Available for freelance projects worldwide.
-            </motion.p>
-            <motion.div 
-              variants={fadeIn('up', 0.5)} 
-              initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.3 }} 
-              className='flex max-w-max gap-x-4 items-center mb-8 mx-auto lg:mx-0'>
-                <button onClick={scrollToContact} className='btn btn-sm lg:btn-md'>Contact me</button>
-            </motion.div>
-            {/* socials */}
-            <motion.div 
-              variants={fadeIn('up', 0.6)} 
-              initial="hidden" whileInView={"show"} 
-              viewport={{ once: false, amount: 0.3 }} 
-              className='flex text-[16px] gap-x-4 max-w-max mx-auto lg:mx-0'>
-              <a href='https://github.com/LouisBlankaert' target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-2xl lg:text-2xl" />
-              </a>
-              <a href='https://linkedin.com/in/louis-blankaert-969595177' target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-2xl lg:text-2xl" />
-              </a>
-            </motion.div>
-          </div>
-          {/* image */}
-          {/* <motion.div 
-            variants={fadeIn('down', 0.5)} 
+            />
+          </motion.div>
+          <motion.p
+            variants={fadeIn('up', 0.4)}
             initial="hidden" whileInView={"show"}
-            className='hidden lg:flex flex-1 max-w-[240px] lg:max-w-[360px]'>
-            <img src={Image} alt='' />
-          </motion.div> */}
+            viewport={{ once: false, amount: 0.3 }}
+            className='mb-10 max-w-xl mx-auto text-[16px] lg:text-[18px] text-gray-400 leading-relaxed'>
+            Software engineering student at 42 Belgium, building a solid foundation in C, algorithms and systems through a 100% project-based curriculum. Alongside my studies, I design and ship web applications as a freelance developer.
+          </motion.p>
+          <motion.div
+            variants={fadeIn('up', 0.5)}
+            initial="hidden" whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex gap-4 items-center justify-center mb-4'>
+            <button onClick={scrollToContact} className='btn btn-md'>Hire me</button>
+            <button onClick={scrollToWork} className='btn-outline btn-md'>View Projects</button>
+          </motion.div>
         </div>
+      </div>
+
+      {/* scroll indicator */}
+      <div className='hidden sm:flex flex-col items-center gap-2 absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-500'>
+        <span className='text-xs uppercase tracking-widest'>Scroll Down</span>
+        <span className='w-5 h-8 rounded-full border border-gray-600 flex justify-center pt-1.5'>
+          <motion.span
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className='w-1 h-1.5 rounded-full bg-accent'
+          />
+        </span>
       </div>
     </section>
   )

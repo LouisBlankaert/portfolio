@@ -5,6 +5,7 @@ module.exports = {
       primary: 'Inter',
       secondary: 'Inter',
       tertiary: 'Poppins',
+      display: 'Fredoka',
     },
     container: {
       padding: {
@@ -19,21 +20,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0a0e27',
-        accent: '#00ff88',
-        neon: {
-          cyan: '#00f5ff',
-          lime: '#00ff88',
-          green: '#00dd9d',
-        },
+        primary: '#0a0a0a',
+        card: '#141414',
+        accent: '#ffd60a',
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
       },
       boxShadow: {
-        neon: '0 0 10px rgba(0, 255, 136, 0.75), 0 0 20px rgba(0, 255, 136, 0.5)',
-        neonCyan: '0 0 10px rgba(0, 245, 255, 0.75), 0 0 20px rgba(0, 245, 255, 0.5)',
-        neonGreen: '0 0 10px rgba(0, 221, 157, 0.75), 0 0 20px rgba(0, 221, 157, 0.5)',
+        accent: '0 0 0 1px rgba(255, 214, 10, 0.4)',
       },
     },
   },

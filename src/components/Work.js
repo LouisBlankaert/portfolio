@@ -1,4 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { FiArrowUpRight } from 'react-icons/fi';
+import { fadeIn } from '../utils/variants';
 import { projects } from '../data/projects';
 
 const ProjectCard = ({ img, title, category, url }) => (
@@ -6,39 +9,58 @@ const ProjectCard = ({ img, title, category, url }) => (
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className='group relative overflow-hidden border border-neon-cyan/50 hover:border-neon-cyan rounded-xl hover:shadow-neonCyan transition-all duration-300'
-    style={{boxShadow: '0 0 6px rgba(0, 245, 255, 0.08)'}}
+    className='card overflow-hidden group hover:border-accent/40 transition-colors flex flex-col'
   >
-    <div className='group-hover:bg-black/30 w-full h-full absolute z-40 transition-all duration-200 bg-black/10'></div>
-    <img
-      src={img}
-      alt={title}
-      className='w-full h-56 object-cover group-hover:scale-110 transition-all duration-300'
-    />
-    <div className='absolute bottom-full left-8 group-hover:bottom-32 transition-all duration-200 z-50'>
-      <span className='neon-text-cyan text-sm font-semibold'>{category}</span>
+    <div className='overflow-hidden h-48'>
+      <img
+        src={img}
+        alt={title}
+        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-300'
+      />
     </div>
-    <div className='absolute -bottom-full left-8 group-hover:bottom-20 transition-all duration-200 z-50'>
-      <span className='text-2xl font-semibold text-white'>{title}</span>
+    <div className='p-5 flex items-center justify-between gap-3'>
+      <div>
+        <span className='inline-block text-[11px] uppercase tracking-wider text-accent font-semibold mb-1.5'>{category}</span>
+        <h3 className='text-white font-semibold text-lg'>{title}</h3>
+      </div>
+      <FiArrowUpRight className='text-gray-500 group-hover:text-accent transition-colors text-xl shrink-0' />
     </div>
   </a>
 );
 
 const Work = () => {
   return (
-    <section className='section mb-24' id='work'>
-      <div className='container mx-auto pb-2'>
-        <div className='w-full mb-12'>
-          <h2 className='h2 leading-tight text-white w-full'>
-            Featured <span className='neon-text'>Projects</span>
-          </h2>
-          <p className='text-gray-400 text-lg mt-4'>A selection of my recent work</p>
-        </div>
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
+    <section className='section' id='work'>
+      <div className='container mx-auto'>
+        <motion.div
+          variants={fadeIn("up", 0.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className='flex justify-center mb-6'>
+          <span className='badge-pill'><span className='dot' />Projects</span>
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className='text-center mb-12'>
+          <h2 className='h2'>Featured Projects</h2>
+          <p className='text-gray-400'>A selection of my recent work</p>
+        </motion.div>
+
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

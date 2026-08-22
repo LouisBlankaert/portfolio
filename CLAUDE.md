@@ -1,7 +1,9 @@
 # Portfolio — CLAUDE.md
 
 ## Vue d'ensemble
-Portfolio personnel de Louis Blankaert — développeur web fullstack. Application React avec Tailwind CSS, design dark/neon (cyan).
+Portfolio personnel de Louis Blankaert. Application React avec Tailwind CSS, design dark inspiré de jamesmumo.vercel.app (accent jaune).
+
+Positionnement (depuis la refonte alignée sur le CV) : **Software Engineering Student @ 42 Belgium** (cursus depuis avril 2026, 100% projets/peer-review, C/algo/systèmes) mis en avant en premier, **freelance web developer** (depuis mai 2025) en complément. Voir `~/Documents/CV/Louis_Blankaert_IT.pdf` comme source de vérité pour toute info bio/stack/expérience — ne pas réintroduire de chiffres non vérifiables (ex: années d'XP ou nombre de projets gonflés) sans les faire correspondre au CV.
 
 ## Stack
 - **React 18** + **Create React App**
@@ -21,17 +23,16 @@ npm run build
 ```
 src/
   components/
-    Banner.js     # Hero section (nom, titre animé, CTA)
-    About.js      # Section "À propos"
-    Services.js   # Services proposés
-    Work.js       # Grille des projets (données dans data/projects.js)
-    Contact.js    # Formulaire de contact
-    Header.js     # Navigation sticky
-    Nav.js        # Nav mobile
+    Header.js         # Nav sticky top (logo LB, liens, CTA, menu mobile)
+    Banner.js          # Hero (nom en font-display, rôle animé, rail social fixe, CTA)
+    About.js            # À propos + grille de chips stack + stats (CountUp)
+    Services.js          # "Skills & Tools" — grille icône+nom (données dans data/services.js)
+    Work.js                # Grille des projets (données dans data/projects.js)
+    Contact.js              # Formulaire (Formspree) + colonne socials/disponibilité
   data/
     projects.js   # ← modifier ici pour ajouter/modifier les projets
-    services.js   # ← modifier ici pour les services
-  assets/         # Images des projets + logo
+    services.js   # ← liste "Skills & Tools" : fusion CV (C, Python, Linux, Git...) + stack projets réels (React, Next.js, Tailwind, Flask, PostgreSQL...)
+  assets/         # Images des projets + logo (logo.svg n'est plus utilisé par Header)
   utils/
 ```
 
@@ -59,9 +60,9 @@ Ajouter l'image dans `src/assets/` et l'importer en haut du fichier. Les cartes 
 | Agenda Louis | — | manquant | Non déployé |
 
 ## Thème Tailwind (couleurs importantes)
-- `neon-cyan` / `neon-text` / `neon-text-cyan` — effets néon cyan
-- `shadow-neonCyan` — box-shadow cyan au hover
-- Design : fond noir `#0a0a0a`, accents cyan `#00f5ff`
+- Design inspiré de jamesmumo.vercel.app : fond quasi noir uni `#0a0a0a` (`bg-primary`), cartes `bg-card` (`#141414`), accent **jaune** `#ffd60a` (`text-accent` / `bg-accent`). Plus d'effets néon/glow (supprimés lors de la refonte).
+- `font-display` (Fredoka) réservé au nom dans le Hero ; `font-tertiary` (Poppins) pour les titres `h2`/`h3` ; `font-primary`/`font-secondary` (Inter) pour le reste.
+- Classes utilitaires dans `index.css` : `.btn` (plein jaune), `.btn-outline` (contour jaune), `.badge-pill` (label de section avec pastille), `.card` (surface commune des sections).
 
 ## Dossier `src/assets/unused/`
 Images des anciens projets (avant refonte) — à garder en archive, ne pas supprimer.
