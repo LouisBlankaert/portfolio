@@ -32,8 +32,8 @@ export const services = [
     imgSrc: 'https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-official~v2.svg',
   },
   {
-    title: 'PostgreSQL',
-    imgSrc: 'https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg',
+    title: 'MySQL',
+    imgSrc: 'https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg',
   },
   {
     title: 'Linux',

@@ -14,7 +14,7 @@ const highlights = [
   'React, Next.js & Node.js',
   'Python, Flask & SQL',
   'Git, GitHub & Shell/Bash',
-  'Vercel & Railway deployment',
+  'Vercel, Railway & Render deployment',
 ];
 
 const About = () => {

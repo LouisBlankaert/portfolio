@@ -1,5 +1,4 @@
 import babeelashes from '../assets/babeelashes.png';
-import byoms from '../assets/byoms.png';
 import vyranos from '../assets/vranos.png';
 import moviz2 from '../assets/moviz2.png';
 
@@ -9,12 +8,6 @@ export const projects = [
     title: 'Babeelashes',
     category: 'Web Development',
     url: 'https://www.babeelashes.be',
-  },
-  {
-    img: byoms,
-    title: 'By OMS',
-    category: 'Web Development',
-    url: 'https://byoms-production.up.railway.app',
   },
   {
     img: vyranos,
